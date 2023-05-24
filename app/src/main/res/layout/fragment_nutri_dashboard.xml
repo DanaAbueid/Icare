@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.AdminDashboardFragment">
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="418dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buttonbackground" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="296dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backforreport" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="555dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/radio_button_checked" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="271dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="564dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tv_fill_info2"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="570dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/nutrients_name"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="357dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="131dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="359dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doctorinfo" />
+
+    <TextView
+        android:id="@+id/tv_fill_info3"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="408dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="My Information"
+        android:textColor="@color/light_green"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="357dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="213dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background" />
+
+    <TextView
+        android:id="@+id/tv_fill_info4"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="276dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Manage Your Patients"
+        android:textColor="@color/light_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="139dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/managepatient" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/genericButton2"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="375dp"
+        android:backgroundTint="@color/light_green"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="357dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="547dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="249dp"
+        android:layout_marginTop="547dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashy" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/genericButton2"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="@color/light_green"
+        android:text="Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fill_info5"
+        android:layout_width="219dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="563dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="125dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Report A Problem"
+        android:textColor="@color/light_green"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/genericButton2"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="534dp"
+        android:backgroundTint="@color/orange"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="361dp"
+        android:layout_marginBottom="687dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buttonbackground" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="374dp"
+        android:layout_marginBottom="691dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/genericButton2"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="@color/light_green"
+        android:text="Manage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

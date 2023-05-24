@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bar_item_register"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_food_bank_24"
+            android:title="Registration List" />
+
+        <item
+            android:id="@+id/nav_bar_item_users"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_food_bank_24"
+            android:title="Users List" />
+        <item
+            android:id="@+id/nav_bar_item_reports_list"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_food_bank_24"
+            android:title="Reports List" />
+
+    </group>
+</menu>

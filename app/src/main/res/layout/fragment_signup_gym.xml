@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".screens.SignupUpGymFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/begie">
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/begie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView2"
+            android:layout_width="452dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="721dp"
+            android:src="@drawable/restgif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="94dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="885dp"
+            android:background="@color/begie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/begie" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/view_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/genericEditText"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="284dp"
+            android:layout_marginBottom="654dp"
+            android:hint="@string/email"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/genericEditText"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="351dp"
+            android:layout_marginBottom="587dp"
+            android:hint="@string/password"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_phone_number"
+            style="@style/genericEditText"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="417dp"
+            android:layout_marginBottom="521dp"
+            android:hint="@string/phone_number"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_fill_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="243dp"
+            android:layout_marginEnd="193dp"
+            android:layout_marginBottom="730dp"
+            android:text="@string/fill_the_required_information"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_last_name_R"
+            style="@style/genericEditText"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="552dp"
+            android:layout_marginBottom="386dp"
+            android:hint="Please Type &quot;Restaurant&quot; Here"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/genericMaterialTextInputEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_resname"
+            style="@style/genericEditText"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="487dp"
+            android:layout_marginBottom="451dp"
+            android:hint="@string/health_restaurant_name"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText style="@style/genericMaterialTextInputEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_city"
+            style="@style/genericSpinner"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="686dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="248dp"
+            android:hint="@string/city"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/mactv_city"
+                style="@style/genericMaterialTextInputEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_country"
+            style="@style/genericSpinner"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="618dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="316dp"
+            android:hint="@string/country"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/mactv_country"
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="none"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="392dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_social_media_accounts"
+            style="@style/genericButton"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="790dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="157dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/social_media_accounts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_upload_license"
+            style="@style/genericButton"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="838dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="109dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/upload_restaurant_license"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonsignup5"
+            style="@style/genericButton"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="909dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="38dp"
+            android:text="@string/signup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="405dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="917dp"
+            android:layout_marginEnd="6dp"
+            android:background="@color/begie"
+            android:backgroundTint="@color/begie"
+            android:foreground="@color/begie"
+            android:src="@drawable/rounded_corner_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

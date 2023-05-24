@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="CalendarCell_PastDate">
+        <item name="android:textColor">@color/gray_for_spin</item>
+    </style>
+
+    <style name="CalendarCell_FutureDate">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="CalendarCell">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="410dp"
+            android:layout_height="121dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="318dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_25" />
+
+        <Button
+            android:id="@+id/tv_open_record"
+            style="@style/genericButton2"
+            android:layout_width="110dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="37dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_patient_name_record"
+            android:layout_width="148dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="170dp"
+            android:layout_marginBottom="37dp"
+            android:text="@string/patient_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/green"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

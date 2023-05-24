@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.AdminLoginFragment">
+
+    <TextView
+        android:id="@+id/tv_forgot_password_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="267dp"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Welcomeing_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="537dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/AdminLoginpage"
+        android:textColor="@color/green"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_login_admin"
+        style="@style/genericButton"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="315dp"
+        android:backgroundTint="@color/green"
+        android:enabled="true"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:enabled="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_admin_email"
+        style="@style/genericEditText"
+        android:layout_marginTop="218dp"
+        android:layout_marginBottom="457dp"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_admin_password"
+        style="@style/genericEditText"
+        android:layout_marginTop="287dp"
+        android:layout_marginBottom="388dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

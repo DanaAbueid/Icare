@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.NutritionRecordListFragment">
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/view_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="291dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="574dp"
+        android:src="@drawable/rounded_filled_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Theme.Icare"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="579dp"
+        android:text="Patients Records"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_patient_list"
+        android:layout_width="410dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="213dp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

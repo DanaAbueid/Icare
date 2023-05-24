@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.NutritionInfoPageFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/begie">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="411dp"
+            android:layout_height="380dp"
+            android:layout_marginBottom="759dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back3" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="411dp"
+            android:layout_height="406dp"
+            android:layout_marginTop="720dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bottomback" />
+
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/view_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cv_general_info"
+            android:layout_width="359dp"
+            android:layout_height="238dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="700dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <TextView
+            android:id="@+id/general_headline2"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="850dp"
+            android:gravity="center|left"
+            android:text="@string/nutritionist_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/center_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="786dp"
+            android:enabled="false"
+            android:hint="@string/center_name"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline4"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="794dp"
+            android:gravity="center|left"
+            android:text="@string/center_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="730dp"
+            android:enabled="false"
+            android:hint="@string/location"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline5"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="738dp"
+            android:gravity="center|left"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="903dp"
+            android:text="@string/general"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nutrition_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="138dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="844dp"
+            android:enabled="false"
+            android:hint="@string/nutritionist_name"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/cv_general_info2"
+            android:layout_width="358dp"
+            android:layout_height="229dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="361dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="440dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="468dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="514dp"
+            android:enabled="false"
+            android:hint="@string/email"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText|phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline7"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="469dp"
+            android:layout_marginEnd="279dp"
+            android:layout_marginBottom="521dp"
+            android:gravity="center|left"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="378dp"
+            android:layout_marginEnd="184dp"
+            android:layout_marginBottom="625dp"
+            android:text="@string/contactinfo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/link_set"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="521dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="461dp"
+            android:hint="Appointment Link"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:editable="true"
+                android:inputType="textWebEditText|number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline20"
+            android:layout_width="67dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="515dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="461dp"
+            android:gravity="center|left"
+            android:text="Zoom Link"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="412dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="570dp"
+            android:hint="@string/phone_number"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:editable="true"
+                android:inputType="textWebEditText|phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline6"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="413dp"
+            android:layout_marginEnd="279dp"
+            android:layout_marginBottom="577dp"
+            android:gravity="center|left"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cv_general_info3"
+            android:layout_width="361dp"
+            android:layout_height="365dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="666dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <Spinner
+            android:id="@+id/report_reason_rest2"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="178dp"
+            android:layout_marginBottom="254dp"
+            android:background="@drawable/spinnerforappoint"
+            android:backgroundTintMode="src_in"
+            android:dropDownHeight="10dp"
+            android:entries="@array/time_from"
+            android:foreground="@drawable/spinnermater"
+            android:foregroundGravity="center_vertical|right"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline19"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="843dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="147dp"
+            android:gravity="center|left"
+            android:text="Available End Date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline9"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="672dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="318dp"
+            android:gravity="center|left"
+            android:text="@string/sessionprice"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="639dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="364dp"
+            android:text="@string/pricing_and_avaliability"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/startDatePicker"
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="787dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="195dp"
+            android:background="@drawable/spinnerforappoint"
+            android:hint="Select a Start Date"
+            android:inputType="none"
+            android:paddingStart="@dimen/_12ssp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline10"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="262dp"
+            android:gravity="center|left"
+            android:text="@string/avalibaletime"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/endDatePicker"
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="843dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="139dp"
+            android:background="@drawable/spinnerforappoint"
+            android:hint="Select an End Date"
+            android:inputType="none"
+            android:paddingStart="@dimen/_12ssp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/report_reason_rest4"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="256dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="254dp"
+            android:background="@drawable/spinnerforappoint"
+            android:backgroundTintMode="src_in"
+            android:dropDownHeight="50dp"
+            android:entries="@array/time_to"
+            android:foreground="@drawable/spinnermater"
+            android:foregroundGravity="center_vertical|right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline18"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="789dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="201dp"
+            android:gravity="center|left"
+            android:text="Available Date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pricing_set"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="672dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="310dp"
+            android:hint="@string/pricingdetail"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:editable="true"
+                android:inputType="textWebEditText|number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Update_nutr_info"
+            style="@style/genericButton2"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="1048dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="41dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <TextView
+            android:id="@+id/general_headline23"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="950dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="147dp"
+            android:gravity="center|left"
+            android:text="Off Day"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/endDatePicker2"
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="950dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="139dp"
+            android:background="@drawable/spinnerforappoint"
+            android:hint="Select an End Date"
+            android:inputType="none"
+            android:paddingStart="@dimen/_12ssp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

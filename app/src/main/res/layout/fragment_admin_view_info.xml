@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.AdminViewInfoFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/begie">
+
+        <ImageView
+            android:id="@+id/tv_backy"
+            android:layout_width="411dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="334dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back3" />
+
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/view_toolbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/tv_general_info"
+            android:layout_width="359dp"
+            android:layout_height="238dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="382dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <TextView
+            android:id="@+id/tv_general_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="584dp"
+            android:text="@string/general"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_nutrition_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="525dp"
+            android:enabled="false"
+            android:hint="@string/nutritionist_name"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_general_headline2"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="532dp"
+            android:gravity="center|left"
+            android:text="@string/nutritionist_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_center_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="468dp"
+            android:enabled="false"
+            android:hint="@string/center_name"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_general_headline4"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="475dp"
+            android:gravity="center|left"
+            android:text="@string/center_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_location_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="255dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="412dp"
+            android:enabled="false"
+            android:hint="@string/location"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_general_headline5"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="419dp"
+            android:gravity="center|left"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tv_general_info2"
+            android:layout_width="359dp"
+            android:layout_height="177dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="348dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="190dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_phone_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="398dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="269dp"
+            android:enabled="false"
+            android:hint="@string/phone_number"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:editable="true"
+                android:inputType="textWebEditText|phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_general_headline6"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="399dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="276dp"
+            android:gravity="center|left"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="454dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="213dp"
+            android:enabled="false"
+            android:hint="@string/email"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText|phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_general_headline7"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="220dp"
+            android:gravity="center|left"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_general_headline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="364dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="324dp"
+            android:text="@string/contactinfo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tv_get_centerL"
+            style="@style/genericButton2"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="544dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="121dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/view_center_license"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <Button
+            android:id="@+id/tv_get_nutritioestL"
+            style="@style/genericButton2"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="605dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/view_nutritionist_license"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <Button
+            android:id="@+id/tv_back_to"
+            style="@style/genericButton2"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="665dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

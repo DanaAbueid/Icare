@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.LoginFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/genericEditText"
+        android:layout_marginTop="284dp"
+        android:layout_marginBottom="391dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_username"
+        style="@style/genericEditText"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="460dp"
+        android:hint="@string/username"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="503dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="206dp"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="105dp"
+        android:text="@string/AdminLogin"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Welcomeing_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="554dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/WelcomeBack"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_become_partner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="157dp"
+        android:text="@string/become_a_partner"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="157dp"
+        android:text="@string/create_account"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_login"
+        style="@style/genericButton"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="253dp"
+        android:enabled="true"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:enabled="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="335dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="319dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonPatient"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_button_custom"
+            android:paddingStart="8dp"
+            android:text="@string/patient" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNutr"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_button_custom"
+            android:paddingStart="8dp"
+            android:text="@string/nutritionist2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_button_custom"
+            android:paddingStart="8dp"
+            android:text="@string/restaurant1" />
+
+        <!-- Add more radio buttons for other user types if needed -->
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

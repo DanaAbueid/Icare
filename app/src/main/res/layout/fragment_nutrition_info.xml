@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.user_my_activity.NutritionInfoFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="323dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background2" />
+
+    <TextView
+        android:id="@+id/get_center_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="324dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/centername"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/center_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="285dp"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/location"
+        android:textAlignment="center"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/center_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="250dp"
+        android:drawableStart="@drawable/ic_baseline_access_time_24"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/call_center"
+        style="@style/genericButton"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="317dp"
+        android:backgroundTint="@color/light_green"
+        android:text="Call"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next_to_bookappoint"
+        style="@style/genericButton"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="158dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:text="@string/book_appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/get_center_image"
+        android:layout_width="323dp"
+        android:layout_height="332dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_rounded_04_05_2023_17_16_41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

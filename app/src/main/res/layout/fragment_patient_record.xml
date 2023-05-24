@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.PatientRecordFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="411dp"
+            android:layout_height="380dp"
+            android:layout_marginBottom="950dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back3" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="411dp"
+            android:layout_height="406dp"
+            android:layout_marginTop="900dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bottomback" />
+
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/view_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cv_general_info"
+            android:layout_width="358dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="557dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <TextView
+            android:id="@+id/general_headline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginBottom="962dp"
+            android:text="@string/patient_informations"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paitent_name_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="901dp"
+            android:enabled="false"
+            android:hint="@string/patient_name"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline22"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="909dp"
+            android:gravity="center|start"
+            android:text="@string/patient_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paitent_height_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="845dp"
+            android:enabled="false"
+            android:hint="@string/height"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline24"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="853dp"
+            android:gravity="center|start"
+            android:text="@string/height"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paitent_lifestyle_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="732dp"
+            android:enabled="false"
+            android:hint="@string/life_style"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paitent_weight_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="788dp"
+            android:enabled="false"
+            android:hint="@string/weight"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline3"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="796dp"
+            android:gravity="center|start"
+            android:text="@string/weight"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline12"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="740dp"
+            android:gravity="center|start"
+            android:text="@string/life_style"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paitent_dissese_get"
+            style="@style/genericEditText"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="676dp"
+            android:enabled="false"
+            android:hint="@string/diseases"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/general_headline13"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="684dp"
+            android:gravity="center|start"
+            android:text="@string/diseases"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline14"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="628dp"
+            android:gravity="center|start"
+            android:text="@string/inbody_test"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline15"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="488dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="580dp"
+            android:gravity="center"
+            android:text="@string/medical_reports"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cv_general_info4"
+            android:layout_width="358dp"
+            android:layout_height="295dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="569dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="244dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <ImageView
+            android:id="@+id/cv_general_info5"
+            android:layout_width="358dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="889dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="106dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <ImageView
+            android:id="@+id/cv_general_info6"
+            android:layout_width="358dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1146dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background2" />
+
+        <TextView
+            android:id="@+id/general_headline25"
+            android:layout_width="307dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="1163dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="61dp"
+            android:text="Your Appointment with this patient At 9:00 am"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/general_headline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="584dp"
+            android:layout_marginEnd="233dp"
+            android:layout_marginBottom="497dp"
+            android:text="@string/send_message"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/open_inbody_test"
+            style="@style/genericButton2"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="626dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <Button
+            android:id="@+id/open_paitent_medical_record"
+            style="@style/genericButton2"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="488dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="578dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <Button
+            android:id="@+id/upload_diet_plan"
+            style="@style/genericButton2"
+            android:layout_width="336dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="941dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="119dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/upload"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <Button
+            android:id="@+id/send_message_button"
+            style="@style/genericButton2"
+            android:layout_width="275dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="804dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="256dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/send2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:enabled="true" />
+
+        <TextView
+            android:id="@+id/general_headline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="905dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="176dp"
+            android:text="@string/upload_diet_plan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/message_for_paitent"
+            style="@style/genericEditText"
+            android:layout_width="333dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="730dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="320dp"
+            android:enabled="true"
+            android:hint="@string/messages"
+            app:boxBackgroundColor="@color/cardview_shadow_start_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:inputType="textWebEditText|text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="314dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="621dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="387dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/message_only_radiobutten"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/read_only_message" />
+
+            <RadioButton
+                android:id="@+id/attach_message_radiobutten"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:text="@string/attachment_message" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

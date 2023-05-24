@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="413dp"
+            android:layout_height="201dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_background" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="371dp"
+            android:layout_marginBottom="155dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_25" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="155dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_25" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="379dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backforreport" />
+
+        <Button
+            android:id="@+id/resolve_report"
+            style="@style/genericButton2"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="153dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/resolve"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Delete_report"
+            style="@style/genericButton2"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="37dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="333dp"
+            android:layout_marginBottom="158dp"
+            android:text="User:"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_get_user"
+            android:layout_width="55dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="277dp"
+            android:layout_marginBottom="157dp"
+            android:text="get user"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_reported"
+            android:layout_width="110dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="201dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="159dp"
+            android:text="Reported User:"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_get_reported"
+            android:layout_width="80dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="317dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="158dp"
+            android:text="get reported"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_report_text"
+            android:layout_width="367dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="62dp"
+            android:autoText="false"
+            android:inputType="textMultiLine"
+            android:paddingStart="@dimen/_10ssp"
+            android:text="please write a text here "
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="158dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="163dp"
+            android:layout_marginEnd="244dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="@dimen/_10ssp"
+            android:text="Status:"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

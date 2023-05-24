@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="410dp"
+            android:layout_height="121dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_get_userL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="82dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="07777777777" />
+
+        <TextView
+            android:id="@+id/tv_userL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="295dp"
+            android:layout_marginBottom="45dp"
+            android:textColor="@color/green"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="User:" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="367dp"
+            android:layout_marginBottom="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_25" />
+
+        <Button
+            android:id="@+id/tv_viewUsers"
+            style="@style/genericButton2"
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/light_green"
+            android:text="View"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tv_Halt"
+            style="@style/genericButton2"
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/green"
+            android:text="Halt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tooltipText="This button stop the selected user from being a member" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

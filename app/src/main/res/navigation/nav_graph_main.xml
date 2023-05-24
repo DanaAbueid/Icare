@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/userNutritionCentersFragment"
+        android:name="com.icare.icare.screens.user_nutrition_centers.UserNutritionCentersFragment"
+        android:label="HomeFragment" >
+
+    <action
+        android:id="@+id/finishRegistration2_to_loginpage"
+        app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/list_to_book"
+            app:destination="@id/User_Nutrition_Info_Fragment">
+            <argument
+                android:name="position"
+                app:argType="integer" />
+        </action>
+
+
+    <action
+        android:id="@+id/action_SignupUpnewFragment_to_Finishregister"
+        app:destination="@id/finishRegistration" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/User_Nutrition_Info_Fragment"
+        android:name="com.icare.icare.screens.user_my_activity.NutritionInfoFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_UserNutritionInfoFragment_to_BookAppointment"
+            app:destination="@id/BookAppointment" />
+    </fragment>
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/Admin_Dashboard"
+        android:name="com.icare.icare.screens.AdminDashboardFragment"
+        android:label="admin" >
+        <action
+            android:id="@+id/dashboard_to_new_mainpage"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/dashboard_to_new_users"
+            app:destination="@id/reviwedusersFragment" />
+        <action
+            android:id="@+id/dashboard_to_users"
+            app:destination="@id/admin_user_list" />
+        <action
+            android:id="@+id/dashboard_to_reports"
+            app:destination="@id/adminnReportsList" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/nutri_Dashboard"
+        android:name="com.icare.icare.screens.NutriDashboardFragment"
+        android:label="admin" >
+        <action
+            android:id="@+id/dashboard_to_new_Nmainpage"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/dashboard_to_info"
+            app:destination="@id/Nutrition_Info_Fragment" />
+        <action
+            android:id="@+id/dashboard_TO_PATIENTS"
+            app:destination="@id/nutri_Records" />
+        <action
+            android:id="@+id/dashboard_to_reports"
+            app:destination="@id/nutri_report" />
+    </fragment>
+
+
+
+
+    <fragment android:id="@+id/nutri_Records"
+        android:name="com.icare.icare.screens.NutritionRecordListFragment"
+        android:label="admin" >
+
+        <action
+            android:id="@+id/recordToPatient"
+            app:destination="@id/patient_record">
+            <argument
+                android:name="position"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+
+    <fragment android:id="@+id/nutri_report"
+        android:name="com.icare.icare.screens.NutritionReportFragment"
+        android:label="admin" > </fragment>
+
+
+
+
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/resta_Dashboard"
+        android:name="com.icare.icare.screens.RestaDashboardFragment"
+        android:label="admin" >
+        <action
+            android:id="@+id/dashboard_to_new_Rmainpage"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/dashboard_to_Rinfo"
+            app:destination="@id/resturant_info" />
+        <action
+            android:id="@+id/dashboard_to_Rreports"
+            app:destination="@id/resta_report" />
+    </fragment>
+
+
+
+
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/resta_report"
+        android:name="com.icare.icare.screens.ResturantReportFragment"
+        android:label="admin" >
+
+    </fragment>
+
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/Nutrition_Info_Fragment"
+        android:name="com.icare.icare.screens.NutritionInfoPageFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_UserNutritionInfoFragment_to_BookAppointment"
+            app:destination="@id/BookAppointment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_rating"
+        android:name="com.icare.icare.screens.UserRatingFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_rate_to_dashboard"
+            app:destination="@id/User_dashboard" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/User_dashboard"
+        android:name="com.icare.icare.screens.user_gym.UserGymMyActivityFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/dashboard_to_bmicalc"
+            app:destination="@id/CalculateBmiFragment" />
+        <action
+            android:id="@+id/dashboard_to_rating"
+            app:destination="@id/user_rating" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resturant_info"
+        android:name="com.icare.icare.screens.RestaurentInfoFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_UserNutritionInfoFragment_to_BookAppointment"
+            app:destination="@id/BookAppointment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/patient_record"
+        android:name="com.icare.icare.screens.PatientRecordFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_UserNutritionInfoFragment_to_BookAppointment"
+            app:destination="@id/BookAppointment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/admin_user_list"
+        android:name="com.icare.icare.screens.AdminUsersListFragment"
+        android:label="user list for admin" >
+
+        <action
+            android:id="@+id/users_to_info"
+            app:destination="@id/adminnutrifo">
+            <argument
+                android:name="position"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminnutrifo"
+        android:name="com.icare.icare.screens.AdminViewInfoFragment"
+        android:label="user list for admin" >
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/adminnReportsList"
+        android:name="com.icare.icare.screens.AdminReportListFragment"
+        android:label="reports list" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/CalculateBmiFragment"
+        android:name="com.icare.icare.screens.CalculateBmiFragment"
+        android:label="reports list">
+        <action
+            android:id="@+id/action_CalculateBmiFragment_to_bmiresultFragment"
+            app:destination="@id/bmiresultFragment" >
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument
+            android:name="height"
+            app:argType="string" />
+        <argument
+            android:name="weight"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="string" /> </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bmiresultFragment"
+        android:name="com.icare.icare.screens.BmiResultFragment"
+        android:label="reports list"
+        tools:layout="@layout/fragment_bmi_result">
+
+        <action
+            android:id="@+id/action_bmiresultFragment_to_dashboard"
+            app:destination="@id/userMyActivityFragment"
+
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/utrition_Info_Fragment"
+        android:name="com.icare.icare.screens.NutritionInfoPageFragment"
+        android:label="user info of centers" >
+        <action
+            android:id="@+id/action_NutritionInfoFragment_to_BookAppointment"
+            app:destination="@id/utrition_Info_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userNutritionCentersnew"
+        android:name="com.icare.icare.screens.NewNutrition"
+        android:label="new" >
+        <action
+            android:id="@+id/action_SignupUpnewFragment_to_Finishregister"
+            app:destination="@id/finishRegistration" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/usermyinfofragment"
+        android:name="com.icare.icare.screens.user_my_activity.UserMyInformationFragment"
+        android:label="new" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminlogin"
+        android:name="com.icare.icare.screens.AdminLoginFragment"
+        android:label="admin login"
+        >
+        <action
+            android:id="@+id/log_to_dashboard"
+            app:destination="@id/Admin_Dashboard" />
+        <action
+            android:id="@+id/log_to_forgettpass"
+            app:destination="@id/ForgotPasswordFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/BookAppointment"
+        android:name="com.icare.icare.screens.BookAppointmentFragment"
+        android:label="new" >
+        <action
+            android:id="@+id/action_BookAppointmentFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.icare.icare.screens.PaymentFragment"
+        android:label="new" >
+        <action
+            android:id="@+id/action_PaymentFragment_to_SuccessfullMoneyTransfer"
+            app:destination="@id/SuccessfullMoneyTransfer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SuccessfullMoneyTransfer"
+        android:name="com.icare.icare.screens.SuccessfulMoneyTransferFragment"
+        android:label="new" >
+        <action
+            android:id="@+id/action_SuccessfullMoneyTransfer_to_mainactivity"
+            app:destination="@id/userMyActivityFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/reviwedusersFragment"
+        android:name="com.icare.icare.screens.AdminRegistListFragment"
+        android:label="new" >
+        <action
+            android:id="@+id/list_to_info"
+            app:destination="@id/adminnutrifo">
+            <argument
+                android:name="position"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/finishRegistration"
+        android:name="com.icare.icare.screens.FinishRegistration"
+        android:label="FinishRegistration" >
+        <action
+    android:id="@+id/finishRegistration_to_loginpage"
+    app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/finishRegistrationn_to_loginpage"
+            app:destination="@id/finishRegistration" />
+        <action
+        android:id="@+id/action_SignupUpGymFragment_to_Finishregister"
+        app:destination="@id/finishRegistration" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/becomePartnerFragment"
+        android:name="com.icare.icare.screens.BecomePartnerFragment"
+        android:label="BecomePartnerFragment" >
+        <action
+            android:id="@+id/action_becomePartnerFragment_to_signupUpGymFragment"
+            app:destination="@id/signupUpGymFragment" />
+        <action
+            android:id="@+id/action_becomePartnerFragment_to_signupUpNutrientsFragment"
+            app:destination="@id/userNutritionCentersnew" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/signupUpGymFragment"
+        android:name="com.icare.icare.screens.SignupUpGymFragment"
+        android:label="SignupUpGymFragment">
+        <action
+    android:id="@+id/action_SignupUpGymFragment_to_Finishregister"
+    app:destination="@id/finishRegistration" /> </fragment>
+
+
+    <fragment
+        android:id="@+id/signupUpUserFragment"
+        android:name="com.icare.icare.screens.SignupUpUserFragment"
+        android:label="SignupUpUserFragment" >
+        <action
+            android:id="@+id/action_signupUpUserFragment_to_lifeStyleFragment"
+            app:destination="@id/lifeStyleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupUpNutrientsFragment"
+        android:name="com.icare.icare.screens.SignupUpNutrientsFragment"
+        android:label="SignupUpNutrientsFragment" >
+        <action
+            android:id="@+id/action_signupUpNutrientsFragment_to_Finishregister"
+            app:destination="@id/finishRegistration" /> </fragment>
+    <fragment
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.icare.icare.screens.ForgotPasswordFragment"
+        android:label="Forgot Password">
+
+        <action
+            android:id="@+id/actionLoginFragmentToForgotPasswordFragment"
+            app:destination="@id/ForgotPasswordFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.icare.icare.screens.LoginFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_user_nutrition_centers" >
+        <action
+            android:id="@+id/actionLoginFragmentToForgotPasswordFragment"
+            app:destination="@id/ForgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signupUpUserFragment"
+            app:destination="@id/signupUpUserFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_becomePartnerFragment"
+            app:destination="@id/becomePartnerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userGymFragment"
+            app:destination="@id/userGymFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userHealthFoodFragment"
+            app:destination="@id/userHealthFoodFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userNutritionCentersFragment"
+            app:destination="@id/userNutritionCentersFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userMyActivityFragment"
+            app:destination="@id/userMyActivityFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nutretion"
+            app:destination="@id/nutri_Dashboard" />
+        <action
+            android:id="@+id/texting"
+            app:destination="@id/resta_Dashboard" />
+
+        <action
+            android:id="@+id/adminlogin2"
+            app:destination="@id/adminlogin" />
+
+        <action
+            android:id="@+id/action_testingpage"
+            app:destination="@id/utrition_Info_Fragment" />
+
+        <action
+            android:id="@+id/action_testingrest_info"
+            app:destination="@id/BookAppointment" />
+
+        <action
+            android:id="@+id/action_testing_patient_record"
+            app:destination="@id/nu_view_records" />
+        <action
+            android:id="@+id/repoting"
+            app:destination="@id/adminnReportsList" />
+
+        <action
+            android:id="@+id/userslostadmin"
+            app:destination="@id/user_rating" />
+        <action
+            android:id="@+id/userslocalc"
+            app:destination="@id/admin_user_list" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/lifeStyleFragment"
+        android:name="com.icare.icare.screens.LifeStyleFragment"
+        android:label="LifeStyleFragment" >
+        <action
+            android:id="@+id/action_lifeStyleFragment_to_chronicDiseaseFragment"
+            app:destination="@id/chronicDiseaseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nu_view_records"
+        android:name="com.icare.icare.screens.NutritionReportFragment"
+        android:label="records Fragment" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nu_resta_report"
+        android:name="com.icare.icare.screens.ResturantReportFragment"
+        android:label="records Fragment" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nu_resta_info"
+        android:name="com.icare.icare.screens.RestaurentInfoFragment"
+        android:label="records Fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nu_view_nreports"
+        android:name="com.icare.icare.screens.NutritionReportFragment"
+        android:label="records Fragment" >
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/chronicDiseaseFragment"
+        android:name="com.icare.icare.screens.ChronicDiseaseFragment"
+        android:label="ChronicDiseaseFragment" />
+    <fragment
+        android:id="@+id/userGymFragment"
+        android:name="com.icare.icare.screens.user_gym.UserGymFragment"
+        android:label="fragment_user_gym"
+        tools:layout="@layout/fragment_user_gym" />
+    <fragment
+        android:id="@+id/userHealthFoodFragment"
+        android:name="com.icare.icare.screens.user_health_food.UserHealthFoodFragment"
+        android:label="fragment_user_health_food"
+        tools:layout="@layout/fragment_user_health_food" />
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/userMyActivityFragment"
+        android:name="com.icare.icare.screens.user_my_activity.UserMyActivityFragment"
+        android:label="UserMyActivityFragment" >
+
+        <action
+            android:id="@+id/dashboard_to_bmicalculator"
+            app:destination="@id/CalculateBmiFragment" />
+        <action
+            android:id="@+id/dashboard_to_link"
+            app:destination="@id/user_rating" />
+
+
+    </fragment>
+
+
+
+
+
+
+
+
+    <fragment
+        android:id="@+id/userReportFragment"
+        android:name="com.icare.icare.screens.user_my_activity.UserReportFragment"
+        android:label="UserReportFragment" />
+</navigation>

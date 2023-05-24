@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.user_gym.UserGymMyActivityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/view_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_tomorrow_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="607dp"
+            android:backgroundTint="@color/light_grey"
+            android:translationZ="-1000dp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="123dp"
+            android:layout_marginBottom="717dp"
+            android:src="@drawable/ic_baseline_notifications_active_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_tomorrow_appointment"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="689dp"
+            android:text="@string/you_have_appointment_tomorrow_at_5pm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_link"
+            style="@style/genericButton"
+            android:layout_width="206dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="209dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="664dp"
+            android:enabled="true"
+            android:text="@string/online_appointment_link"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/genericButton"
+            android:layout_width="165dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="229dp"
+            android:layout_marginTop="209dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="664dp"
+            android:enabled="true"
+            android:text="@string/cancel_appointment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+        <Button
+            android:id="@+id/button_food_list_of_week"
+            style="@style/genericButton"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="534dp"
+            android:text="@string/food_list_of_the_week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button_upload_inbody_test"
+            style="@style/genericButton"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="470dp"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/upload_your_inbody_test_file"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="387dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="433dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="260dp"
+            android:src="@drawable/rounded_corner_backgroundgray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_get_message"
+            style="@style/genericEditText"
+            android:layout_width="251dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="487dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="310dp"
+            android:background="@drawable/backforreport"
+            android:orientation="vertical"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/genericMaterialTextInputEditText"
+                android:layout_width="226dp"
+                android:layout_height="67dp"
+                android:background="@drawable/backforreport"
+                android:gravity="fill_horizontal"
+                android:inputType="text|textImeMultiLine"
+                android:textAlignment="viewStart"
+                android:textSize="12sp"
+                tools:ignore="RtlCompat,SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_messages"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="445dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="393dp"
+            android:text="@string/messages"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tv_attachment"
+            style="@style/genericButton"
+            android:layout_width="99dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="286dp"
+            android:layout_marginTop="494dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="320dp"
+            android:text="Open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_messages2"
+            android:layout_width="376dp"
+            android:layout_height="113dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="807dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/begie"
+            android:translationZ="-1000dp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="387dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="685dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="64dp"
+            android:src="@drawable/rounded_corner_backgroundgray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="133dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="699dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="116dp"
+            android:src="@drawable/questionsbro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/questionspana" />
+
+        <TextView
+            android:id="@+id/tv_bmi_text"
+            android:layout_width="254dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="716dp"
+            android:layout_marginEnd="123dp"
+            android:layout_marginBottom="109dp"
+            android:text="@string/do_you_want_to_know_if_your_body_measure_index_is_healthy_use_our_calculater_and_find_out"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/calc_your_bmi_form"
+            style="@style/genericButton"
+            android:layout_width="262dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="795dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="77dp"
+            android:text="@string/calculate_your_bmi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

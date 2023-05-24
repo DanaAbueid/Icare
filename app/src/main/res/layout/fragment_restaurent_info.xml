@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/begie"
+    tools:context=".screens.RestaurentInfoFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="411dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back3" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="411dp"
+        android:layout_height="406dp"
+        android:layout_marginTop="454dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottomback" />
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/view_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cv_general_info"
+        android:layout_width="358dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="441dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background2" />
+
+    <ImageView
+        android:id="@+id/cv_general_info7"
+        android:layout_width="358dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_background2" />
+
+    <TextView
+        android:id="@+id/general_headline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="593dp"
+        android:text="@string/general"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/restuarent_name_get"
+        style="@style/genericEditText"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="524dp"
+        android:enabled="false"
+        android:hint="@string/reastuarentname"
+        app:boxBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textWebEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/general_headline22"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="532dp"
+        android:gravity="center|left"
+        android:text="@string/reastuarentname"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resturant_location_get"
+        style="@style/genericEditText"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="468dp"
+        android:enabled="false"
+        android:hint="@string/location"
+        app:boxBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textWebEditText"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/general_headline24"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="476dp"
+        android:gravity="center|left"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/general_headline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="388dp"
+        android:text="@string/contactinfo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/general_headline27"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="332dp"
+        android:gravity="center|left"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resturant_phone_get"
+        style="@style/genericEditText"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="324dp"
+        android:enabled="true"
+        android:hint="@string/phone_number"
+        app:boxBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resturant_email_get"
+        style="@style/genericEditText"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="263dp"
+        android:enabled="false"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textWebEditText"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/general_headline28"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="271dp"
+        android:gravity="center|left"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/resturant_social_get"
+        style="@style/genericEditText"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="203dp"
+        android:enabled="true"
+        android:hint="@string/social_media_accounts"
+        app:boxBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/genericMaterialTextInputEditText"
+            android:inputType="textWebEditText|text"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/general_headline29"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="211dp"
+        android:gravity="center|left"
+        android:text="@string/social_media_accounts"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Update_nutr_info"
+        style="@style/genericButton2"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="577dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:enabled="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
